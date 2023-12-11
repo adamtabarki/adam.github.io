@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traducteur Morse</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="container">
+        <header id="header">
+            <img src="logo.png" id="logo">
+         <h2 id="titre1">Traducteur morce</h2>
+        </header>
+        <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="margin-right:20px;">
+            <label for="inputText">Texte</label><br>
+            <textarea type="text" id="inputText" placeholder="Saisissez le texte à traduire" cols="50" rows="20" oninput="translateToMorse()"></textarea><br>
+            <button onclick="voice()">Listen</button>
+        </div>
+        <div style="margin-left:20px;">
+            <label for="inputText">Code Morse</label><br>
+            <textarea type="text" id="morse" placeholder="Saisissez le code à traduire" cols="50" rows="20" oninput="translateToText()"></textarea><br>
+        </div>
+        </div>
+        
+        
+        
+        <br>
+        <h2 class="titre">qu'est ce que le code morce ? </h2>
+        <p>Le code Morse est un schéma de codage de caractères qui permet aux opérateurs <br>
+            d'envoyer des messages en utilisant une série d'impulsions électriques représentées <br>
+            sous la forme d'impulsions courtes ou longues : en d'autres termes, des points et des tirets.</p>
+        <h2>comment traduire le code morce ?</h2>
+        <p>Si vous souhaitez traduire ou déchiffrer le code Morse mais ne savez pas le lire, vous pouvez <br>
+            simplement utiliser le Traducteur de code Morse en ligne. Avec le Traducteur de code Morse, vous <br>
+            pouvez décoder le code Morse et lire facilement le texte en français.</p>
+            <h2>Qu'est-ce que le Traducteur de code Morse ?</h2>
+            <p>Le Traducteur de code Morse est un traducteur qui permet à quiconque de traduire le code Morse en <br>
+                texte et de le décoder facilement. Avec le Traducteur de code Morse en ligne, n'importe qui peut <br>
+                convertir en code Morse n'importe quel texte simple en français ou dans la langue désirée, et inversement.</p>
+        <h2>Qui a inventé le code Morse ?</h2>
+        <p>Samuel F. B. Morse et son assistant Alfred Vail sont connus pour être les inventeurs de ce code <br> auquel le scientifique a donné son nom.</p>
+        <h2>Quand le code Morse a-t-il été inventé ?</h2>
+        <p>Le code Morse a été développé dans les années 1830, puis perfectionné dans les années 1840.</p>
+        <h2>Quel était le premier message envoyé en code Morse ?</h2>
+        <p>« What hath God wrought » (en français : Ce que Dieu a forgé) est le premier message officiel envoyé <br>
+            par Samuel F.B. Morse le 24 Mai 1844 pour ouvrir la ligne télégraphique Baltimore - Washington. <br> pour plus de details cliqué <a href="https://www.youtube.com/watch?v=DhnS0agi_kI&t=5s" id="lien">ici</a></p>
+            <h2>À quoi le code Morse sert-il ?</h2>
+            <p>Dans le passé, le code Morse bénéficiait d'une large utilisation, notamment dans l'armée. Bien que son <br>domaine d'utilisation soit aujourd'hui limité, il est toujours employé dans l'aviation, les activités de <br>radio amateur et les technologies d'assistance (TA).</p>
+            <h2>Comment lire le code Morse ?</h2>
+            <p>Si vous ne maîtrisez pas suffisamment le code Morse, vous pouvez rechercher la représentation en <br>Morse de chaque caractère dans la table de l'alphabet Morse, ou simplement utiliser le Traducteur de <br>code Morse.</p>
+            <h2>Comment traduit-on SOS en code Morse ?</h2>
+            <p>SOS en code Morse donne : « ... --- ... »</p>
+    </div>   
+        
+</body>
+<script src="script.js"></script>
+</html>
+
